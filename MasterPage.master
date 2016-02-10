@@ -1,0 +1,55 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server" />
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link href="css/reset.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Raleway:700,500,400,300|Roboto:400,500italic,900italic,700italic' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="wrapper">
+        <div id="topbar">
+            <ul>
+                <li><a href="Login.aspx">Login</a></li>
+                <li><a href="Kontakt.aspx">Kontakt</a></li>
+            </ul>
+        </div>
+
+        <header>
+            <div id="logo">
+                <a href="Default.aspx"><img src="img/logo.png" alt="The Architect Logo" /></a>
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="Default.aspx">Forside</a></li>
+                    <li><a href="Produkter.aspx">Produkter</a></li>
+                    <li><a href="Kundeservice.aspx">Kundeservice</a></li>
+                </ul>
+            </nav>
+        </header>
+            <div id="content">
+                <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server" />
+            </div>
+
+        <asp:Panel ID="pnlCookies" CssClass="cookie-alert" runat="server">
+            <div class="cookie-alert-content">
+                <asp:LinkButton ID="lbnAccepterCookies" CssClass="cookie-alert-button" Text="Acceptér cookies" runat="server" AutoPostBack="true" OnClick="lbnAccepterCookies_Click" />
+                <h4>Hjemmesiden bruger cookies</h4>
+                <p>Cookies er nødvendige for at få hjemmesiden til at fungere, men de giver også info om hvordan du bruger vores hjemmeside, så vi kan forbedre den både for dig og for andre. Cookies på denne hjemmeside bruges primært til trafikmåling og optimering af sidens indhold.
+Hvis du klikker videre på siden, accepterer du vores brug af cookies. <a href="Cookies.aspx">Læs Mere</a></p>
+            </div>
+        </asp:Panel>
+
+    </div>
+    </form>
+</body>
+</html>

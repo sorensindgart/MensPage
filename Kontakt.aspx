@@ -1,0 +1,13 @@
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="Kontakt.aspx.cs" Inherits="Kontakt" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+
+    <asp:Literal ID="litResult" runat="server" />
+    <br />
+    <br />
+    <a href="Kundeservice.aspx"class="arrow"><i class="fa fa-chevron-left fa-2x"></i> <span>Gå tilbage</span></a>
+
+</asp:Content>
+

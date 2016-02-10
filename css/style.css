@@ -1,0 +1,694 @@
+﻿body {
+    background-image: url('../img/bg2.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#wrapper {
+    width: 100%;
+    height: 100vh;
+}
+
+/* TOP BAR MED LOGIN OG KONTAKT */
+
+#topbar {
+    background-color: white;
+    width: 100%;
+    height: 2.5vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+}
+
+#topbar ul li {
+    float: right;
+    margin-right: 15px;
+}
+
+#topbar ul li a {
+    list-style: none;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    color: black;
+}
+
+/* LOGOUT KNAPPEN UNDER ADMIN (TOPBAR) */
+
+.btnLogout {
+    border: none;
+    background-color: white;
+    list-style: none;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    color: black;
+}
+
+.btnLogout:hover {
+    border-bottom: 2px solid rgb(100, 100, 100);
+}
+
+#topbar ul li a:hover {
+    border-bottom: 2px solid rgb(100, 100, 100);
+}
+
+/* LOGO */
+
+#logo, #logo img {
+    display: inline-block;
+    margin-left:1.1%;
+    float: left;
+}
+
+/* HEADER */
+
+header {
+    background-color: rgba(255,255,255,1);
+    width: 100%;
+    height: 12.5vh;
+    position: fixed;
+    top: 2.5vh;
+    z-index: 999;
+}
+
+/* NAVIGATION */
+
+nav {
+    /*background-color: yellow;*/
+    display: inline-block;
+    float: right;
+    margin-right:5.6%;
+}
+
+nav ul {
+    display: flex;
+    height: 10vh;
+    align-items: center;
+    /*background-color: purple;*/
+    /*justify-content:flex-end;*/
+}
+
+nav ul li {
+    /*background-color: burlywood;*/
+    padding: 15px;
+}
+
+nav ul li a {
+    font-family:'Roboto', sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 300;
+    color: black;
+    }
+nav ul li a:hover {
+    color: #565656;
+    border-bottom: 3px solid #6f6f6f;
+}
+
+#content {
+    /*background-color: indianred;*/
+    /*background-image: url('../img/bg.jpg');*/
+    /*background-size: cover;*/
+    width: 100%;
+    height: 85vh;
+    position: absolute;
+    top: 15vh;
+}
+
+/* COOKIE */
+
+.cookie-alert {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    left: 0; bottom: 0;
+    background-color: rgba(0,0,0,0.7);
+    width: 100%;
+    height: 10vh;
+}
+
+.cookie-alert-content {
+    color: white;
+}
+
+.cookie-alert-content h4 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-family: 'Roboto', sans-serif;
+    padding: 15px;
+}
+.cookie-alert-content p {
+    font-size: 14px;
+    padding: 0 0 0 15px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.cookie-alert-button {
+    font-size: 20px;
+    width: 10%;
+    text-align: center;
+    color: black;
+    background: white;
+    float: right;
+    text-decoration: none;
+    padding: 20px;
+    margin: 1.5vh 1.5vw;
+}
+
+.cookie-alert-button:hover {
+    color: #565656;
+    text-decoration: underline;
+}
+
+/* FORSIDE */
+
+#forside {
+    width: 70%;
+    height: 75vh;
+    display: inline-block;
+}
+
+#forside-newproduct {
+    width: 39%;
+    height: 80vh;
+    background-color: white;
+    display: inline-block;
+    padding: 20px;
+}
+
+#forside-tekst {
+    width: 46%;
+    height: 75vh;
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 6px;
+    display: inline-block;
+    float: right;
+    margin-top: 5vh;
+    margin-left: 5vw;
+    color: white;
+}
+
+#newsletter {
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 15%;
+    height: 40vh;
+    display: inline-block;
+    position: absolute;
+    top: 5vh;
+    right: 5%;
+    border-radius: 7px;
+}
+
+#newsletter h3 {
+    font-size: 24px;
+    text-align: center;
+    font-weight: 700px;
+    padding: 5px;
+    float: left;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    font-size: 34px;
+    color: white;
+    font-weight: 500;
+    margin-top: 2.3%;
+    padding-left:6px;
+    line-height:2em;
+}
+
+#newsletter p {
+    padding: 5px;
+    font-size: 16px;
+    padding-left: 6px;
+}
+
+#catelog {
+    background-color: rgba(255,255,255,0.8);
+    background-image: url('../img/catalog.png');
+    background-size: cover;
+    width: 15%;
+    height: 25vh;
+    display: inline-block;
+    position: absolute;
+    bottom: 5vh;
+    right: 5%;
+}
+
+#forsidetext {
+    color: white;
+    font-family: Raleway,sans-serif;
+    font-size: 1em;
+    line-height: 1.2;
+}
+
+/* KUNDESERVICE */
+
+#kundeservice {
+    display: inline-block;
+    position: relative;
+    left: calc(47% - 346px);
+    top: 30%;
+}
+
+#kundeservice p {
+    color: white;
+    padding: 10px;
+}
+
+#kundeservice li {
+    display: inline-block;
+    padding: 40px;
+    text-align: center;
+}
+
+#kundeservice li:hover {
+    color: #00c9b3;
+}
+
+#kundeservice i {
+    color: white;
+}
+
+#kundeservice i:hover {
+    color: #00c9b3;
+}
+
+.fa fa-credit-card {
+    margin-top: 2%;
+}
+
+h3.betingelser {
+    line-height: 6em;
+}
+
+/* ADMIN */
+
+.txtbox-single {
+    width: 300px;
+    height: 30px;
+    display: inline;
+    border: none;
+}
+
+.txtbox-single-tilmeld {
+    width: 200px;
+    height: 40px;
+    border: none;
+    display: block;
+    margin-left:10px;
+    padding-left:5px;
+    font-family:Raleway,sans-serif;
+    font-weight:400;
+    font-size:15px;
+}
+
+.txtbox-multi {
+    width: 296px;
+    height: 150px;
+    resize: none;
+    display: inline;
+    border: none;
+    border-radius:6px;
+}
+
+.btnDefault {
+    width: 300px;
+    height: 30px;
+    border: none;
+}
+.btnTilmeld {
+    width: 200px;
+    height: 40px;
+    border: none;
+    display: block;
+    margin-left:10px;
+    font-family:Raleway,sans-serif;
+    font-weight:400;
+    font-size:15px;
+    border-radius:4px;
+}
+
+.btnTilmeld:hover {
+    background-color:#00c9b3;
+    color:white;
+}
+
+#content2 {
+    display: inline-block;
+    position: relative;
+    left: calc(50% - 150px);
+    margin-top: 20vh;
+}
+
+#seneste_produkt {
+    display: inline-block;
+    position: relative;
+    left: calc(50% - 150px);
+    margin-top: 30px;
+}
+
+#seneste_produkt h2 {
+    background-color: black;
+    color: white;
+    font-size: 22px;
+    text-align: center;
+}
+
+.pick-image {
+    color: white;
+}
+
+/* ADMIN OPRET PRODUKT TEXTBOX */
+
+#admin-opret {
+    display: inline-block;
+    position: relative;
+    left: calc(50% - 300px);
+    margin-top: 100px;
+}
+
+#admin-opret-produkt-left {
+    display: inline-block;
+}
+
+#admin-opret-produkt-right {
+    display: inline-block;
+}
+
+/* ADMIN NAV BAR */
+/* CSSTerm.com Simple Horizontal DropDown CSS menu */
+
+.drop_menu {
+	background: white;
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+	height: 3vh;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+}
+
+.drop_menu li { 
+    float:left;
+}
+
+.drop_menu li a {
+	padding: 9px 20px;
+	display: block;
+	color: #565656;
+	text-decoration: none;
+    text-transform: uppercase;
+	font: 12px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Submenu */
+
+.drop_menu ul {
+	position: absolute;
+	left: -9999px;
+	top: -9999px;
+	list-style-type: none;
+}
+
+.drop_menu li:hover { 
+    position: relative; 
+    color: white; 
+}
+
+.drop_menu li:hover ul {
+	left: 0px;
+	top: 30px;
+	padding: 0px;
+}
+
+.drop_menu li:hover ul li a {
+	padding: 5px;
+	display: block;
+	width: 168px;
+	text-indent: 15px;
+	background-color: white;
+}
+
+.drop_menu li:hover ul li a:hover { 
+    border-top: 1px solid #565656;
+    border-bottom: 1px solid #565656;
+}
+
+/*------------------Kobsbetingelser.aspx*-----------------*/
+
+#content_kobsbetingelser {
+    width: 950px;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.08);
+    margin: auto;
+    margin-top: 2%;
+    border-radius: 6px;
+    padding: 1%;
+    -webkit-columns: 3;
+    -moz-columns: 3;
+    columns: 3;
+    -webkit-column-gap: 30px;
+    -moz-column-gap: 30px;
+    column-gap: 30px;
+    -webkit-column-width: 150px;
+    -moz-column-width: 150px;
+    column-width: 150px;
+}
+
+#betingelsertitel {
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    font-size: 40px;
+    color: white;
+    font-weight: 500;
+    margin-left: 24.3%;
+    margin-top: 2%;
+}
+
+.betingelser {
+    font-family: Raleway, sans-serif;
+    font-size: 1.5em;
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.plaintext {
+    color: #cfcfcf;
+    font-family: Raleway,sans-serif;
+    font-size: 1em;
+    line-height: 1.2;
+}
+
+#leftbox {
+    width: 287px;
+    height: auto;
+    padding: 10px;
+    position: absolute;
+    top: 117px;
+    border-radius: 6px;
+    background-color: rgba(255, 255, 255, 0.08);
+    -webkit-box-shadow: 10px 10px 12px -8px rgba(18,18,18,1);
+    -moz-box-shadow: 10px 10px 12px -8px rgba(18,18,18,1);
+    box-shadow: 10px 10px 12px -8px rgba(18,18,18,1);
+}
+
+/*--------Arrow--------*/
+
+.arrow{
+    color:white;
+    position:absolute;
+    top:400px;
+    left:0.4%;
+}
+a{
+    text-decoration:none;
+    color:AppWorkspace;
+}
+span{
+    font-family:Raleway, sans-serif;
+    font-weight:100;
+    vertical-align:super;
+}
+span:hover{
+     color:#00c9b3;
+}
+
+/*--------------Cookies.aspx------------*/
+
+#content_cookies {
+    width: 600px;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.08);
+    margin-left:24.5%;
+    margin-top: 2%;
+    border-radius: 6px;
+    padding: 1%;
+    -webkit-columns: 1;
+    -moz-columns: 1;
+    columns: 1;
+    -webkit-column-gap: 30px;
+    -moz-column-gap: 30px;
+    column-gap: 30px;
+    -webkit-column-width: 150px;
+    -moz-column-width: 150px;
+    column-width: 150px;
+}
+
+#cookies {
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    font-size: 40px;
+    color: white;
+    font-weight: 500;
+    margin-left: 24.3%;
+    margin-top: 2%;
+}
+
+/*-----------------------Kontakt.aspx-------------------------------*/
+
+#content_kontakt {
+    width: 950px;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.08);
+    margin: auto;
+    margin-top: 2%;
+    border-radius: 6px;
+    padding: 1%;
+    -webkit-columns: 1;
+    -moz-columns: 1;
+    columns: 1;
+    -webkit-column-gap: 50px;
+    -moz-column-gap:50px;
+    column-gap: 50px;
+    -webkit-column-width: 150px;
+    -moz-column-width: 150px;
+    column-width: 150px;
+    color:white;
+    position:relative;
+
+}
+
+#kontakttitel {
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    font-size: 40px;
+    color: white;
+    font-weight: 500;
+    margin-left: 24.3%;
+    margin-top: 2%;
+}
+
+iframe{
+    float:right;
+    position:absolute;
+    top:3.5%;
+    left:31.8%;
+}
+
+/*----------------------- ADMIN FORSIDE RET -----------------------*/
+
+.forside-ret {
+}
+
+.forside-ret h2, .forside-slet h2 {
+    font-size: 24px;
+    text-align: center;
+    padding: 20px;
+    font-weight: bold;
+    color: white;
+    font-family: Raleway, sans-serif;
+    text-transform: uppercase
+}
+
+.forside-ret h4, .forside-slet h4 {
+    font-size: 18px;
+    text-align: center;
+    color: white;
+    font-family: Raleway, sans-serif;
+
+}
+
+.forside-ret-list, .forside-slet-list {
+    font-family: Raleway, sans-serif;
+    padding: 10px;
+    display: inline-block;
+    width: 500px;
+    position: relative;
+    left: calc(50% - 255px);
+}
+
+.forside-slet-list:hover {
+    text-decoration: line-through;
+}
+
+.forside-ret-list:hover {
+    text-decoration: underline;
+}
+
+.opret-ret-list, .opret-slet-list {
+    font-family: Raleway, sans-serif;
+    padding: 10px;
+    display: block;
+    width: 500px;
+    position: relative;
+    left: calc(50% - 255px);
+}
+
+.opret-ret-list:hover {
+    text-decoration: underline;
+}
+
+.opret-slet-list:hover {
+    text-decoration: line-through;
+}
+
+/* -------------------- INDIVIDUAL PRODUKT --------------------------*/
+
+#produkt-page {
+    background-color: rgba(255,255,255,0.3);
+    border-radius: 6px;
+    height: 400px;
+    width: 50%;
+    margin: 30px auto;
+}
+
+.produkt-image, .produkt-image img {
+    display: inline-block;
+    float: right;
+    width: 300px;
+    height: 400px;
+}
+
+.produkt-overskrift {
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    font-family: Raleway, sans-serif;
+    text-transform: uppercase;
+}
+
+.produkt-tekst {
+    padding: 20px;
+    width: 660px;
+    color: white;
+    font-family: Raleway, sans-serif;
+}
+
+.produkt-pris {
+    position: relative;
+    color: white;
+    text-align: center;
+    font-size: 22px;
+}

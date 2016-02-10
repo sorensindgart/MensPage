@@ -1,0 +1,74 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="adminMasterPage.master.cs" Inherits="admin_adminMasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server" />
+	
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link href="../css/reset.css" rel="stylesheet" />
+    <link href="../css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Raleway:700,500,400,300|Roboto:400,500italic,900italic,700italic' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="wrapper">
+        <div id="topbar">
+            <ul>                
+                <li><asp:Button ID="btnLogout" runat="server" Text="Logout" OnClick="btnLogout_Click" CssClass="btnLogout" /></li>
+                <li><a href="../Kontakt.aspx">Kontakt</a></li>
+            </ul>
+        </div>
+                <!--<input type="text" value="hej"/>-->
+
+        <header>
+            <div id="logo">
+                <a href="../Default.aspx"><img src="../img/logo.png" alt="The Architect Logo" /></a>
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="../Default.aspx">Forside</a></li>
+                    <li><a href="../Produkter.aspx">Produkter</a></li>
+                    <li><a href="../Kundeservice.aspx">Kundeservice</a></li>
+                </ul>
+            </nav>
+        </header>
+
+            <div id="content"> 
+                <div id="adminbar">
+                    <ul class="drop_menu">
+                        <li><a href="Default.aspx">Bruger: <asp:Literal ID="litUser" runat="server" /></a></li>
+                        <li><a href="#">Forside</a>
+                            <ul>
+                                <li><a href="ForsideOpret.aspx">Opret</a></li>
+                                <li><a href="ForsideRet.aspx">Ret</a></li>
+                                <li><a href="ForsideSlet.aspx">Slet</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="#">Produkter</a>
+                            <ul>
+                                <li><a href="Opret.aspx">Opret</a></li>
+                                <li><a href="Ret.aspx">Ret</a></li>
+                                <li><a href="Slet.aspx">Slet</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="#">Kontakt</a>
+                            <ul>
+                                <li><a href="KontaktRet.aspx">Ret</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>  
+
+                <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server" />
+            </div>
+    </div>
+    </form>
+</body>
+</html>
